@@ -19,23 +19,17 @@ elif  #In the case that your choice loses to the computer
     return "womp womp"
 """
 import typing
-# import random
-#
-# def gameDict
-#     rock = "rock"
-#     paper = "paper"
-#     scissors = "scissors"
-#
-#     winTable = {"rock" : "scissors", "scissors" : "paper", "paper" : "rock"}
-#
-# #Get player throw
-# def playerThrow
-#
-#
-#
-# #Get computer throw
-# def computerThrow
-#     #random number generator where throws == numbers
+import random
+
+# def playerThrow(gameDict:typing.Dict[str, typing.List[str]]) -> str:
+#     throws = list(gameDict.keys())
+#     playerThrow = input("Choose your weapon!")
+#     return playerThrow
+
+def computerThrow(gameDict:typing.Dict[str, typing.List[str]]) -> str:
+    throws = list(gameDict.keys())
+    computerThrow = random.choice(throws)
+    return computerThrow
 
 def findWinner(gameDict:typing.Dict[str, typing.List[str]], computerThrow:str, playerThrow:str) -> str:
     if playerThrow == computerThrow:
@@ -49,5 +43,3 @@ def findWinner(gameDict:typing.Dict[str, typing.List[str]], computerThrow:str, p
     else:
         return "computer wins"
 
-
-#start game
