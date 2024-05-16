@@ -26,7 +26,7 @@ import random
 #     playerThrow = input("Choose your weapon!")
 #     return playerThrow
 
-def computerThrow(gameDict:typing.Dict[str, typing.List[str]]) -> str:
+def getComputerThrow(gameDict:typing.Dict[str, typing.List[str]]) -> str:
     throws = list(gameDict.keys())
     computerThrow = random.choice(throws)
     return computerThrow
